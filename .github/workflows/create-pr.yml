@@ -1,0 +1,47 @@
+name: Create Pull Request
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run tests
+        run: |
+          pip install poetry
+          poetry install
+          poetry run pytest
+
+      - name: Create Pull Request
+        if: success()  # 只有测试通过才创建 PR
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: release/${{ github.ref_name }}
+          base: main
+          title: '🔖 Release ${{ github.ref_name }}'
+          body: |
+            ## 🚀 New Release
+
+            Automated PR for version ${{ github.ref_name }}
+
+            ### ✅ Checks
+            - All tests passed
+            - CHANGELOG.md updated
+
+            Please review the changes and merge if everything looks good.
+          labels: |
+            release
+            automated pr
