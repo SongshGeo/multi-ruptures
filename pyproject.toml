@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "songshgeo"
-version = "0.1.0"
-description = "Template"
+name = "multi-ruptures"
+version = "0.1.1"
+description = "Multiple breakpoint detection toolkit."
 authors = ["SongshGeo <songshgeo@gmail.com>"]
 license = "MIT"
 readme = "README.md"
