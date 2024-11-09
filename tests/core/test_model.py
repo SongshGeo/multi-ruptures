@@ -5,7 +5,6 @@
 # GitHub   : https://github.com/SongshGeo
 # Website: https://cv.songshgeo.com/
 
-from .pettitt import iterative_pettitt
-from .rpt import detect_breakpoints
-
-__all__ = ["detect_breakpoints", "iterative_pettitt"]
+"""
+Test model.
+"""
