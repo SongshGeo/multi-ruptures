@@ -31,7 +31,6 @@ pre-commit-hooks = ">=4.4.0"
 snakeviz = ">=2.2.0"
 tox = ">=4.12.1"
 tox-gh-actions = ">=3.2.0"
-scriv = ">=1.5.1"
 
 
 [tool.poetry.group.docs.dependencies]
@@ -55,7 +54,3 @@ mkdocs-exclude = ">=1.0.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.scriv]
-version = "literal: pyproject.toml: tool.poetry.version"
-format = "md"
