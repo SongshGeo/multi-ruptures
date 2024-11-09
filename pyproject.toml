@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "multi-ruptures"
-version = "0.1.1"
+version = "0.1.3"
 description = "Multiple breakpoint detection toolkit."
 authors = ["SongshGeo <songshgeo@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "src"}]
+packages = [{include = "multi_ruptures", from = "src"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<3.12"

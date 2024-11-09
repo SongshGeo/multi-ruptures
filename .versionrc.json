@@ -5,16 +5,21 @@
       "updater": "standard-version-updater.js"
     }
   ],
-  "types": [
-    {"type": "feat", "section": "✨ Features"},
-    {"type": "fix", "section": "🐛 Bug Fixes"},
-    {"type": "docs", "section": "📝 Documentation"},
-    {"type": "style", "section": "💄 Styles"},
-    {"type": "refactor", "section": "♻️ Code Refactoring"},
-    {"type": "perf", "section": "⚡️ Performance Improvements"},
-    {"type": "test", "section": "✅ Tests"},
-    {"type": "build", "section": "🏗️ Build System"},
-    {"type": "ci", "section": "👷 CI"},
-    {"type": "chore", "section": "🔧 Chores"}
-  ]
+  "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.",
+  "preset": {
+    "name": "angular",
+    "types": [
+      {"type": "feat", "section": "✨ Features"},
+      {"type": "fix", "section": "🐛 Bug Fixes"},
+      {"type": "docs", "section": "📝 Documentation"},
+      {"type": "style", "section": "💄 Styles"},
+      {"type": "refactor", "section": "♻️ Code Refactoring"},
+      {"type": "perf", "section": "⚡️ Performance Improvements"},
+      {"type": "test", "section": "✅ Tests"},
+      {"type": "build", "section": "🏗️ Build System"},
+      {"type": "ci", "section": "👷 CI"},
+      {"type": "chore", "section": "🔧 Chores"}
+    ],
+    "headerLevel": 2
+  }
 }

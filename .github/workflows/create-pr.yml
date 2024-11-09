@@ -21,7 +21,7 @@ jobs:
       - name: Run tests
         run: |
           pip install poetry
-          poetry install
+          poetry install --group dev
           poetry run pytest
 
       - name: Create Pull Request
@@ -30,7 +30,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: release/${{ github.ref_name }}
-          base: main
+          base: master
           title: '🔖 Release ${{ github.ref_name }}'
           body: |
             ## 🚀 New Release

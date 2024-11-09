@@ -1,8 +1,23 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
+## [0.1.3](https://github.com/SongshGeo/multi-ruptures/compare/v0.1.2...v0.1.3) (2024-11-09)
 
-### [0.1.1](https://github.com/SongshGeo/multi-ruptures/compare/v0.1.0...v0.1.1) (2024-11-09)
+
+### Bug Fixes
+
+* **project:** :green_heart: Correct heading level in Changelog and creating PR gh workflow ([e3cadf3](https://github.com/SongshGeo/multi-ruptures/commit/e3cadf35d210305078f348ed052711ee9fd9234b))
+
+
+
+## [0.1.2](https://github.com/SongshGeo/multi-ruptures/compare/v0.1.1...v0.1.2) (2024-11-09)
+
+
+### 🐛 Bug Fixes
+
+* **project:** :green_heart: include correct package src ([31276a4](https://github.com/SongshGeo/multi-ruptures/commit/31276a41888b2a2c08445dd0eddbe34d0a88e854))
+
+## [0.1.1](https://github.com/SongshGeo/multi-ruptures/compare/v0.1.0...v0.1.1) (2024-11-09)
 
 
 ### 👷 CI

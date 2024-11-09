@@ -12,7 +12,7 @@ Test known breakpoints.
 import numpy as np
 from numpy.testing import assert_allclose
 
-from src.api.pettitt import iterative_pettitt
+from multi_ruptures.api.pettitt import iterative_pettitt
 
 
 def test_three_segments(three_segments: tuple[np.ndarray, tuple]) -> None:
